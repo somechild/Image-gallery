@@ -1,0 +1,134 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+}
+body{
+	min-width: 900px;
+	min-height: 500px;
+	background-color: #F5F3F0;
+}
+.homeGallery{
+	position: relative;
+	height: 300px;
+	width: 310px;
+	margin: 6px;
+	margin-left: 12px;
+	margin-right: 0px;
+	border-radius: 2px;
+	float: left;
+	overflow: hidden;
+	background-color: #edeae3;
+	box-shadow: 0px 1px 8px -3px black;
+	border: 1px solid #ada698;
+}
+.homeGallery>span{
+	position: absolute;
+	display: block;
+	height: 20px;
+	line-height: 17px;
+	width: 20px;
+	margin-left: 16px;
+	margin-right: 15px;
+	margin-top: 150px;
+	text-align: center;
+	background-color: #352e21;
+	border: 1px solid white;
+	font-size: 12px;
+	cursor: pointer;
+	top: 0;
+	opacity: 0.3;
+	z-index: 1;
+	border-radius: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+.homeGallery>span>img{
+	width: 6px;
+	margin-top: 0px;
+}
+.homeGallery>span:first-child{
+	left: 1px;
+}
+.homeGallery>span:last-child{
+	right: 1px;
+}
+.homeGallery>span:hover{
+	opacity: 0.6;
+}
+
+.homeGallery>div>span{
+	display: block;
+	height: 275px;
+	width: 285px;
+	margin: 12.5px;
+	opacity: 0;
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	    -ms-transition: all .45s;
+	     -o-transition: all .45s;
+	        transition: all .45s;
+}
+.homeGalleryImageDiv{
+	width: 285px;
+	height: 275px;
+	border-radius: 2px;
+	border: 1px solid #4D381C;
+	box-shadow: 0px 2px 8px -3px black;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.homeGalleryImageDiv>img{
+	opacity: 0;
+	z-index: -1;
+	height: 1px;
+	width: 1;
+}
+.homeGallery>div p{
+	position: absolute;
+	color: #edeae3!important;/*#575146!important;*/
+	bottom: -4px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	left: 1px;
+	width: 285px;
+	background-color: #2B2310;/*#edeae3;*/
+	font-size: 11px!important;
+	text-align: center;
+	padding-left: 0px!important;
+	border-top: 1px solid #332B17;
+	opacity: 0.6;
+
+	line-height: 18px!important;
+	-webkit-transition: opacity .6s;
+	   -moz-transition: opacity .6s;
+	    -ms-transition: opacity .6s;
+	     -o-transition: opacity .6s;
+	        transition: opacity .6s;
+}
+.homeGallery:hover>div p{
+	opacity: 1;
+}
+.homeGalleryCurrentImage{
+	opacity: 1!important;
+}
+#homePageList{
+	font-size: 14px;
+	font-style: italic;
+	margin-left: 48px;
+	line-height: 24px;
+	color: #998a6e;
+}

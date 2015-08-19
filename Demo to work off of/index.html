@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simply jQuery Gallery Demo</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body>
+		<div>
+			<div class="homeGallery">
+				<span><img src="gallery/backarrowIco2.png"></span>
+				<div>
+					<!-- ###use the below span template and iterate it for however many images you want to show in the gallery### -->
+
+					<!--start template-->
+
+						<span class="homeGalleryCurrentImage">
+							<div style="background-image:url('gallery/6.jpeg')" class="homeGalleryImageDiv"><img src="gallery/6.jpeg"></div> <!-- ##insert an image inside the div to check for when the first image has loaded## -->
+							<p>Description text one.</p>
+						</span>
+
+					<!--end template-->
+
+
+
+
+					<!--*note* template has been iterated below as a demo-->
+					<span>
+						<div style="background-image:url('gallery/5.jpeg')" class="homeGalleryImageDiv"></div>
+						<p>Description text one.</p>
+					</span>
+					<span>
+						<div style="background-image:url('gallery/1.jpeg')" class="homeGalleryImageDiv"></div>
+						<p>Description text one.</p>
+					</span>
+					<span>
+						<div style="background-image:url('gallery/2.jpeg')" class="homeGalleryImageDiv"></div>
+						<p>Description text two.</p>
+					</span>
+					<span>
+						<div style="background-image:url('gallery/3.jpeg')" class="homeGalleryImageDiv"></div>
+						<p>Description text three.</p>
+					</span>
+					<span>
+						<div style="background-image:url('gallery/4.jpeg')" class="homeGalleryImageDiv"></div>
+						<p>Description text found.</p>
+					</span>
+				</div>
+				<span><img src="gallery/backarrowIco1.png"></span>
+			</div>
+		</div>
+	</body>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</html>
